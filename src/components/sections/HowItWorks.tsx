@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { Lock, Search, CheckCircle2 } from 'lucide-react'
 import { StepItem } from '../ui/StepItem'
