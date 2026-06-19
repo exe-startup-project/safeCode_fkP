@@ -9,4 +9,8 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  server: {
+    // Allow ngrok and any external tunnel to proxy through
+    allowedHosts: 'all',
+  },
 })
