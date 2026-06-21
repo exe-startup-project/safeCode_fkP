@@ -1,4 +1,5 @@
 import { Code2 } from 'lucide-react'
+import { contactLinks } from '@/lib/contactLinks'
 
 export function Footer() {
   return (
@@ -19,10 +20,27 @@ export function Footer() {
           <span className="text-ink-500 font-body text-sm">— zero-trust code delivery</span>
         </div>
 
-        {/* Right: legal */}
-        <p className="font-mono text-xs text-ink-500">
-          © 2026 SafeCode. All rights reserved.
-        </p>
+        {/* Right: social links + legal */}
+        <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-end">
+          {/* Icon-only social links */}
+          <div className="flex items-center gap-2" aria-label="Social links">
+            {contactLinks.map(link => (
+              <a
+                key={link.label}
+                href={link.href}
+                {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+                aria-label={link.external ? `${link.label} (opens in new tab)` : link.label}
+                className="w-6 h-6 flex items-center justify-center text-ink-500 hover:text-ink-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-1 rounded-sm"
+              >
+                {link.icon(14)}
+              </a>
+            ))}
+          </div>
+          <span className="text-border font-mono text-xs" aria-hidden="true">·</span>
+          <p className="font-mono text-xs text-ink-500">
+            © 2026 SafeCode. All rights reserved.
+          </p>
+        </div>
       </div>
     </footer>
   )

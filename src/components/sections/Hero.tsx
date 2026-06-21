@@ -28,7 +28,7 @@ export function Hero() {
         <motion.div variants={fadeUpVariant} className="flex justify-center mb-6">
           <span className="inline-flex items-center gap-2 px-3 py-1 bg-bg-base border border-border rounded-full text-xs font-body font-medium text-ink-700">
             <ShieldCheck className="w-3.5 h-3.5 text-accent-blue" aria-hidden="true" />
-            Private beta — apply now
+            Code protection for freelancers
           </span>
         </motion.div>
 
@@ -53,17 +53,16 @@ export function Hero() {
 
         {/* CTAs */}
         <motion.div variants={fadeUpVariant} className="flex flex-wrap justify-center gap-3 mb-12">
-          <Button
-            variant="primary"
-            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group"
+          <button
+            onClick={() => document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' })}
+            className="inline-flex items-center justify-center gap-2 group font-body font-medium text-sm rounded-md bg-ink-900 text-white px-5 py-2.5 hover:bg-ink-700 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2"
           >
-            Get Early Access
+            Get in Touch
             <ArrowRight
               className="w-4 h-4 transition-transform group-hover:translate-x-0.5"
               aria-hidden="true"
             />
-          </Button>
+          </button>
           <Button
             variant="ghost"
             onClick={() => document.getElementById('how-it-works')?.scrollIntoView({ behavior: 'smooth' })}

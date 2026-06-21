@@ -10,7 +10,10 @@ export default defineConfig({
     },
   },
   server: {
-    // Allow ngrok and any external tunnel to proxy through
-    allowedHosts: 'all',
+    host: true,
+    allowedHosts: true,
+    headers: {
+      'ngrok-skip-browser-warning': '1',
+    },
   },
 })

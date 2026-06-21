@@ -1,5 +1,4 @@
 import { Code2 } from 'lucide-react'
-import { Button } from '../ui/Button'
 
 export function Nav() {
   return (
@@ -34,13 +33,12 @@ export function Nav() {
           >
             How it works
           </a>
-          <Button
-            variant="primary"
-            onClick={() => document.getElementById('waitlist')?.scrollIntoView({ behavior: 'smooth' })}
-            className="text-sm px-4 py-2"
+          <button
+            onClick={() => document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' })}
+            className="inline-flex items-center justify-center font-body font-medium text-sm rounded-md bg-ink-900 text-white px-4 py-2 hover:bg-ink-700 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2"
           >
-            Join Waitlist
-          </Button>
+            Contact
+          </button>
         </div>
       </nav>
     </header>
