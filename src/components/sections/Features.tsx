@@ -17,36 +17,48 @@ const features = [
     title: 'Deals',
     description:
       'Manage the full contract lifecycle — draft, active, expired — with two-person approval for high-value engagements.',
+    iconBg: 'bg-blue-50',
+    iconColor: 'text-blue-600',
   },
   {
     icon: <Layers className="w-5 h-5" />,
     title: 'Products',
     description:
       'Attach licensing terms to every deliverable. Define exactly what clients can run, fork, and distribute.',
+    iconBg: 'bg-teal-50',
+    iconColor: 'text-teal-600',
   },
   {
     icon: <ShieldCheck className="w-5 h-5" />,
     title: 'ProofQueue',
     description:
       'An 8-stage AI verification pipeline validates client proof requests before access is granted.',
+    iconBg: 'bg-emerald-50',
+    iconColor: 'text-emerald-600',
   },
   {
     icon: <Clock className="w-5 h-5" />,
     title: 'Policy',
     description:
       'Set offline lease windows (1–72h), expiry rules, and access policies that travel with the code.',
+    iconBg: 'bg-amber-50',
+    iconColor: 'text-amber-600',
   },
   {
     icon: <CreditCard className="w-5 h-5" />,
     title: 'Credits',
     description:
       'Transparent per-operation billing with a full formula breakdown — no surprise charges, ever.',
+    iconBg: 'bg-orange-50',
+    iconColor: 'text-orange-600',
   },
   {
     icon: <BookOpen className="w-5 h-5" />,
     title: 'Audit',
     description:
       'An immutable, tamper-evident event log for every action. Export-ready for legal or compliance review.',
+    iconBg: 'bg-rose-50',
+    iconColor: 'text-rose-600',
   },
 ]
 

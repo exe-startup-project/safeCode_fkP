@@ -40,10 +40,11 @@ export function Connect() {
               <a
                 href={ch.href}
                 {...(ch.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
-                className="flex items-center gap-3 px-5 py-3.5 bg-bg-base border border-border rounded-md text-ink-700 hover:text-ink-900 hover:border-ink-500 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 font-body font-medium text-sm"
+                className="flex items-center gap-3 px-5 py-3.5 bg-bg-base border border-border rounded-md text-ink-700 hover:text-ink-900 hover:border-ink-500 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 font-body font-medium text-sm"
                 aria-label={ch.external ? `${ch.label} (opens in new tab)` : ch.label}
               >
-                <span className="text-ink-500">{ch.icon(20)}</span>
+                {/* Icon gets its own tint color */}
+                <span className={ch.iconTint}>{ch.icon(20)}</span>
                 {ch.label}
               </a>
             </motion.div>

@@ -11,6 +11,9 @@ const steps = [
     title: 'Upload your code',
     description:
       'Your work is encrypted and zero-trust-wrapped the moment it leaves your machine. Clients never see raw source.',
+    iconBg: 'bg-blue-50',
+    iconColor: 'text-blue-600',
+    iconBorder: 'border-blue-200',
   },
   {
     number: 'Step 02',
@@ -18,6 +21,9 @@ const steps = [
     title: 'Client submits a proof request',
     description:
       'They trigger an 8-stage AI verification pipeline. Every step is logged, time-stamped, and auditable.',
+    iconBg: 'bg-teal-50',
+    iconColor: 'text-teal-600',
+    iconBorder: 'border-teal-200',
   },
   {
     number: 'Step 03',
@@ -25,6 +31,9 @@ const steps = [
     title: 'Get paid automatically',
     description:
       'Once proof clears, the deal locks, credits are settled, and the audit trail is sealed. No chasing invoices.',
+    iconBg: 'bg-emerald-50',
+    iconColor: 'text-emerald-600',
+    iconBorder: 'border-emerald-200',
   },
 ]
 

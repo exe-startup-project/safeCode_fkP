@@ -4,18 +4,20 @@ import { Button } from '../ui/Button'
 import { Pill } from '../ui/Pill'
 import { fadeUpVariant, staggerContainer } from '@/lib/motion'
 
+// Each badge gets a subtle tint cycling through the palette
 const trustBadges = [
-  { emoji: '🛡', label: 'Zero-Trust Architecture' },
-  { emoji: '⚡', label: 'AI-Powered Verification' },
-  { emoji: '✅', label: 'WCAG AA Compliant' },
-  { emoji: '🕐', label: 'Offline Lease Support' },
-  { emoji: '📈', label: 'Immutable Audit Trail' },
+  { emoji: '🛡', label: 'Zero-Trust Architecture', iconClass: 'text-blue-600' },
+  { emoji: '⚡', label: 'AI-Powered Verification', iconClass: 'text-teal-600' },
+  { emoji: '✅', label: 'WCAG AA Compliant', iconClass: 'text-emerald-600' },
+  { emoji: '🕐', label: 'Offline Lease Support', iconClass: 'text-amber-600' },
+  { emoji: '📈', label: 'Immutable Audit Trail', iconClass: 'text-orange-600' },
 ]
 
 export function Hero() {
   return (
     <section
-      className="bg-bg-soft py-20 md:py-28 px-4 sm:px-6"
+      className="py-20 md:py-28 px-4 sm:px-6"
+      style={{ background: 'linear-gradient(135deg, #eff6ff 0%, #f0fdfa 100%)' }}
       aria-label="Hero"
     >
       <motion.div
@@ -26,8 +28,8 @@ export function Hero() {
       >
         {/* Badge */}
         <motion.div variants={fadeUpVariant} className="flex justify-center mb-6">
-          <span className="inline-flex items-center gap-2 px-3 py-1 bg-bg-base border border-border rounded-full text-xs font-body font-medium text-ink-700">
-            <ShieldCheck className="w-3.5 h-3.5 text-accent-blue" aria-hidden="true" />
+          <span className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-border rounded-full text-xs font-body font-medium text-ink-700">
+            <ShieldCheck className="w-3.5 h-3.5 text-blue-600" aria-hidden="true" />
             Code protection for freelancers
           </span>
         </motion.div>
@@ -55,7 +57,7 @@ export function Hero() {
         <motion.div variants={fadeUpVariant} className="flex flex-wrap justify-center gap-3 mb-12">
           <button
             onClick={() => document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' })}
-            className="inline-flex items-center justify-center gap-2 group font-body font-medium text-sm rounded-md bg-ink-900 text-white px-5 py-2.5 hover:bg-ink-700 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2"
+            className="inline-flex items-center justify-center gap-2 group font-body font-medium text-sm rounded-md bg-blue-600 text-white px-5 py-2.5 hover:bg-blue-700 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
           >
             Get in Touch
             <ArrowRight

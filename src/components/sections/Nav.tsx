@@ -13,11 +13,11 @@ export function Nav() {
         {/* Logo */}
         <a
           href="#"
-          className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 rounded-sm"
+          className="flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 rounded-sm"
           aria-label="SafeCode home"
         >
           <div
-            className="w-7 h-7 rounded-sm bg-ink-900 flex items-center justify-center shrink-0"
+            className="w-7 h-7 rounded-sm bg-blue-600 flex items-center justify-center shrink-0"
             aria-hidden="true"
           >
             <Code2 className="w-4 h-4 text-white" />
@@ -29,13 +29,13 @@ export function Nav() {
         <div className="flex items-center gap-4">
           <a
             href="#how-it-works"
-            className="hidden sm:block font-body text-sm text-ink-700 hover:text-ink-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2 rounded-sm"
+            className="hidden sm:block font-body text-sm text-ink-700 hover:text-ink-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 rounded-sm"
           >
             How it works
           </a>
           <button
             onClick={() => document.getElementById('connect')?.scrollIntoView({ behavior: 'smooth' })}
-            className="inline-flex items-center justify-center font-body font-medium text-sm rounded-md bg-ink-900 text-white px-4 py-2 hover:bg-ink-700 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2"
+            className="inline-flex items-center justify-center font-body font-medium text-sm rounded-md bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 hover:-translate-y-0.5 hover:shadow-sm transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2"
           >
             Contact
           </button>

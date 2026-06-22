@@ -70,6 +70,8 @@ export interface ContactLink {
   label: string
   href: string
   external: boolean
+  /** Tailwind text class for the icon tint, e.g. "text-blue-600" */
+  iconTint: string
   /** Render the icon at a given pixel size. Defaults to 20. */
   icon: (size?: number) => ReactElement
 }
@@ -79,24 +81,28 @@ export const contactLinks: ContactLink[] = [
     label: 'Facebook',
     href: 'https://www.facebook.com/profile.php?id=61590480126901',
     external: true,
+    iconTint: 'text-blue-600',
     icon: (size = 20) => <FacebookIcon size={size} />,
   },
   {
     label: 'Email',
     href: 'mailto:freelancerkillswitch@gmail.com',
     external: false,
+    iconTint: 'text-orange-600',
     icon: (size = 20) => <Mail width={size} height={size} aria-hidden="true" />,
   },
   {
     label: 'TikTok',
     href: 'https://tiktok.com/@freelancer.killswitch',
     external: true,
+    iconTint: 'text-rose-600',
     icon: (size = 20) => <TikTokIcon size={size} />,
   },
   {
     label: 'Discord',
     href: 'https://discord.gg/gwP5r9DQ',
     external: true,
+    iconTint: 'text-indigo-500',
     icon: (size = 20) => <DiscordIcon size={size} />,
   },
 ]

@@ -11,7 +11,7 @@ export function Footer() {
         {/* Left: brand */}
         <div className="flex items-center gap-2">
           <div
-            className="w-7 h-7 rounded-sm bg-ink-900 flex items-center justify-center shrink-0"
+            className="w-7 h-7 rounded-sm bg-blue-600 flex items-center justify-center shrink-0"
             aria-hidden="true"
           >
             <Code2 className="w-4 h-4 text-white" />
@@ -22,7 +22,7 @@ export function Footer() {
 
         {/* Right: social links + legal */}
         <div className="flex items-center gap-3 flex-wrap justify-center sm:justify-end">
-          {/* Icon-only social links */}
+          {/* Icon-only social links with per-platform tint */}
           <div className="flex items-center gap-2" aria-label="Social links">
             {contactLinks.map(link => (
               <a
@@ -30,7 +30,7 @@ export function Footer() {
                 href={link.href}
                 {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 aria-label={link.external ? `${link.label} (opens in new tab)` : link.label}
-                className="w-6 h-6 flex items-center justify-center text-ink-500 hover:text-ink-900 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-1 rounded-sm"
+                className={`w-6 h-6 flex items-center justify-center transition-opacity hover:opacity-100 opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-1 rounded-sm ${link.iconTint}`}
               >
                 {link.icon(14)}
               </a>

@@ -37,12 +37,16 @@ export function BothSides() {
             title="Freelancers"
             subtitle="Protect your work, your terms"
             items={freelancerItems}
+            iconBg="bg-blue-50"
+            iconColor="text-blue-600"
           />
           <BenefitCard
             icon={<Users className="w-5 h-5" />}
             title="Clients"
             subtitle="Trust the delivery, not just the promise"
             items={clientItems}
+            iconBg="bg-teal-50"
+            iconColor="text-teal-600"
           />
         </motion.div>
       </div>

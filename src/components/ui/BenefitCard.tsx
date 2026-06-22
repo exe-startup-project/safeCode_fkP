@@ -1,15 +1,20 @@
 import { motion } from 'framer-motion'
+import type { ReactNode } from 'react'
 import { Check } from 'lucide-react'
 import { fadeUpVariant } from '@/lib/motion'
 
 interface BenefitCardProps {
-  icon: React.ReactNode
+  icon: ReactNode
   title: string
   subtitle: string
   items: string[]
+  /** Tailwind bg class for the icon square, e.g. "bg-blue-50" */
+  iconBg: string
+  /** Tailwind text class for the icon, e.g. "text-blue-600" */
+  iconColor: string
 }
 
-export function BenefitCard({ icon, title, subtitle, items }: BenefitCardProps) {
+export function BenefitCard({ icon, title, subtitle, items, iconBg, iconColor }: BenefitCardProps) {
   return (
     <motion.article
       variants={fadeUpVariant}
@@ -17,10 +22,10 @@ export function BenefitCard({ icon, title, subtitle, items }: BenefitCardProps) 
     >
       <div className="flex items-center gap-3 mb-6">
         <div
-          className="w-10 h-10 rounded-sm flex items-center justify-center bg-ink-900 text-white"
+          className={`w-10 h-10 rounded-sm flex items-center justify-center ${iconBg}`}
           aria-hidden="true"
         >
-          {icon}
+          <span className={iconColor}>{icon}</span>
         </div>
         <div>
           <h3 className="font-heading font-semibold text-ink-900 text-lg leading-tight">{title}</h3>
