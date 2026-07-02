@@ -15,35 +15,32 @@
     --status-success: #16a34a;
     --status-warning: #d97706;
     --status-danger: #dc2626;
-    --radius-sm: 8px;
-    --radius-md: 12px;
-    --radius-lg: 16px;
   }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  html {
-    scroll-behavior: smooth;
-  }
-
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
   body {
     font-family: 'IBM Plex Sans', sans-serif;
     color: var(--ink-700);
-    background: var(--bg-base);
+    background: #fff;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
   }
-
-  h1, h2, h3, h4, h5, h6 {
+  h1,h2,h3,h4,h5,h6 {
     font-family: 'Space Grotesk', sans-serif;
     color: var(--ink-900);
   }
 }
 
-@layer utilities {
-  .focus-ring {
-    @apply outline-none focus-visible:ring-2 focus-visible:ring-accent-blue focus-visible:ring-offset-2;
-  }
+/* Light dot grid (for hero) */
+.dot-grid-light {
+  background-image: radial-gradient(circle, rgba(37,99,235,0.10) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* Floating card lift */
+.float-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.float-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px -8px rgba(37,99,235,0.15);
 }

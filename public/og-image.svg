@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff"/>
+      <stop offset="100%" style="stop-color:#f0fdfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Logo icon -->
+  <rect x="84" y="220" width="72" height="72" rx="12" fill="#2563eb"/>
+  <text x="120" y="272" font-family="monospace" font-size="32" fill="white" text-anchor="middle" font-weight="bold">&lt;/&gt;</text>
+
+  <!-- Wordmark -->
+  <text x="176" y="272" font-family="system-ui, sans-serif" font-size="48" fill="#0f172a" font-weight="700">SafeCode</text>
+
+  <!-- Tagline -->
+  <text x="84" y="340" font-family="system-ui, sans-serif" font-size="28" fill="#334155">Ship client work without handing over your code.</text>
+
+  <!-- Sub-copy -->
+  <text x="84" y="390" font-family="system-ui, sans-serif" font-size="20" fill="#64748b">Zero-trust execution · AI verification · Immutable audit trail</text>
+
+  <!-- URL -->
+  <text x="84" y="540" font-family="monospace" font-size="18" fill="#2563eb">www.safecode.id.vn</text>
+</svg>
